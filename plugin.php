@@ -7,7 +7,10 @@ Version: 1.1
 Author: Leo Colomb
 Author URI: http://colombaro.fr/
 */
- 
+
+// No direct call
+if( !defined( 'YOURLS_ABSPATH' ) ) die();
+
 // You can modify the character before number
 define( 'LIMIT_BEFORE_CHAR', '_' );
 

@@ -1,25 +1,22 @@
-Yourls Plugin 
+Limited Links
 =============
 
+Plugin for [YOURLS](http://yourls.org) 1.5+. 
 
-Limited Links
-------------------
+Description
+-----------
+Limit redirections of a specific link with '_' + 'number' added to this link.
 
-Plugin for [YOURLS 1.5+](http://yourls.org/): To limit redirections of a specific link with a '_' + 'number' added to this link
+Installation
+------------
+1. In `/user/plugins`, create a new folder named `limited-links`.
+2. Drop these files in that directory.
+3. Go to the Plugins administration page ( *eg* `http://sho.rt/admin/plugins` ) and activate the plugin.
+4. Have fun!
 
-### Install
+Optionnal Setup
+---------------
+Character `_` could be change in `plugin.php`.
 
-* In `/user/plugins`, create a new folder named `limited-links`
-* In this new directory, copy file named `plugin.php`
-* Go to the Plugins administration page and activate the plugin 
-
-### Optional configuration
-
-Character `_` could be change in `plugin.php`
-
-* Locate `define( 'LIMIT_BEFORE_CHAR', '_' );` at line 12
-* Change `_` with your specific character
-
-### More
-
-See more information at [Yourls Code](http://code.google.com/p/yourls/)
+1. Locate `define( 'LIMIT_BEFORE_CHAR', '_' );` at line 12
+2. Change `_` with your specific character
