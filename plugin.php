@@ -20,7 +20,7 @@ yourls_add_action( 'loader_failed', 'lpc_limit_request' );
 function lpc_limit_request($args) {
 	$request = $args[0];
 	$pattern = yourls_make_regexp_pattern( yourls_get_shorturl_charset() );
-	if( preg_match( "@^([$pattern]+)".LIMIT_BEFORE_CHAR."[0-9]$@", $request, $matches ) ) {
+	if( preg_match( "@^([$pattern]+)".LIMIT_BEFORE_CHAR."[0-9]+$@", $request, $matches ) ) {
 		$keyword = isset( $matches[1] ) ? $matches[1] : '';
 		$keyword = yourls_sanitize_keyword( $keyword );
 		$number = substr($request, strrpos($request, LIMIT_BEFORE_CHAR) + 1);
