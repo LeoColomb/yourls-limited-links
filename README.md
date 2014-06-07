@@ -14,6 +14,15 @@ Installation
 3. Go to the Plugins administration page ( *eg* `http://sho.rt/admin/plugins` ) and activate the plugin.
 4. Have fun!
 
+Usage
+---------------
+1. Create your short URLs as usual
+2. Pick the generated short URL then append `_` (or your own `LIMIT_BEFORE_CHAR`)
+3. Then append the number which correspond to the hits limitation
+4. Share the given URL
+
+__Note__: In steps 2/3, you're not supposed to *edit* the link, the first generated URL have to continue to exist.
+
 Optionnal Setup
 ---------------
 Character `_` could be change in `plugin.php`.
